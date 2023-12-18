@@ -1,0 +1,51 @@
+#This is so that the answers are asked in random succession
+import random
+
+def banner(text):
+    banner = f"~+~ {text} ~+~"
+    border = "~" * len(banner)
+    banner = f"{border}\n{banner}\n{border}"
+    return banner
+
+text = "Promotion Board Prep"
+print(banner(text))
+
+#You can edit this dictionary by adding any questions that are not stated already on this
+#Format = "question" : "answer" (followed by a comma for each additional question you add)
+answer_key = {
+    "Where do NCO's derive their power from?" : "Secretary of the Army",
+    "What are the protected categories of SHARP? (Alphabetical, seperated by commas)" : "Color, National Origin, Race, Religion, Sex, Sexual Orientation",
+    "How many paragraphs are in the NCO Creed?" : "3",
+    "What is the FM that covers H2F?" : "FM 7-22.01",
+    "What is the FM for the NCO Handbook?" : "FM 7-22.7",
+    "When is the Army Birthday? (Full name of month DD YYYY)" : "June 14 1775",
+    "American NCO is a blend of what Armies?" : "Great Britain, France, Prussia",
+    "What is the full name of the blue book?" : "Regulation for the Order and Discipline of the Troops of the United States",
+    "Who was the first Sergeant of the Army?" : "SMA Wooldridge"
+}
+
+Situational_Question = [
+    "Your soldier comes up to you not knowing if he wants to reenlist, how do you proceed?\n",
+    "You are out with your soldier and he gets drunk, he tells you that he wants to" 
+    " take a girl home who also, is drunk. How do you proceed?\n"
+]
+
+#This is the function where all the magic happens
+
+choice = int(input("How many questions would you like to do?\n"))
+qNum = 1
+
+for x in range(0,choice):
+    qNum = str(qNum)
+    random_question = random.choice(list(answer_key))
+    answer = input(f"Question {qNum}) " + random_question+"\n")
+    if answer.upper() == answer_key[random_question].upper():
+        input("You got the answer right!\n")
+    else:
+        print("Not quite what I am looking for...")
+        print("The correct answer was:", answer_key[random_question]+"\n")
+    qNum = int(qNum)
+    qNum += 1
+
+sitQues = random.choice(Situational_Question)
+input(sitQues)
