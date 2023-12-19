@@ -1,18 +1,18 @@
 #This is so that the answers are asked in random succession
 import random
 
+
+#Makes a pretty banner for the user
 def banner(text):
     banner = f"~+~ {text} ~+~"
     border = "~" * len(banner)
     banner = f"{border}\n{banner}\n{border}"
     return banner
-
 text = "Promotion Board Prep"
 print(banner(text))
 
 
-
-
+#This is a dictionary for the test, you can edit them as you see fit, answer_key dictionary can be used for questions that do not fall under any of the chapters of the NCO guide
 chapter1 = {
     "" : ""
 }
@@ -76,7 +76,6 @@ chapter6 = {
     "What are NCO's certified in that makes them Army professionals?" : "Candor, Competence, Character, Commitment, Standards",
 }
 
-
 #You can edit this dictionary by adding any questions that are not stated already on this
 #Format = "question" : "answer" (followed by a comma for each additional question you add)
 answer_key = {
@@ -91,18 +90,22 @@ answer_key = {
     "Who was the first Sergeant of the Army?" : "SMA Wooldridge"
 }
 
+#You can add a situational question of your own by just putting your question into quotes and adding a , after the previous sitauation
 Situational_Question = [
     "Your soldier comes up to you not knowing if he wants to reenlist, how do you proceed?\n",
     "You are out with your soldier and he gets drunk, he tells you that he wants to" 
     " take a girl home who also, is drunk. How do you proceed?\n"
 ]
 
-#This is the function where all the magic happens
+#chapters will allow the user to choose what chapters they want to review
 chapters = input("What Chapters of the NCO Guide would you like to cover today?\n")
+#choice will allow the user to select the number of questions they want to review
 choice = int(input("How many questions would you like to do?\n"))
 qNum = 1
+#finalTest is a dictionary that will add the questions for each chapter the user selected in the 'chapters' variable
 finalTest = {}
 
+#iterates through the 'chapters' variable to append each chapter to finalTest
 for num in chapters:
     if num == '1':
         finalTest.update(chapter1)
@@ -117,6 +120,7 @@ for num in chapters:
     elif num == '6':
         finalTest.update(chapter6)
 
+#This is the code for the main test
 for x in range(0,choice):
     qNum = str(qNum)
     random_question = random.choice(list(finalTest))
@@ -129,5 +133,6 @@ for x in range(0,choice):
     qNum = int(qNum)
     qNum += 1
 
+#This will ask the user a random situational question at the end of the written question portion
 sitQues = random.choice(Situational_Question)
 input(sitQues)
