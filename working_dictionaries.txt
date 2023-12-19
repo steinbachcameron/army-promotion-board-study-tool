@@ -12,4 +12,31 @@ chapter2{
 
 chapter3{
     "What is the name for the 3rd chapter of the NCO guide" : "The Roadmap to Effective Leadership",
+    "What are the attributes of a leader?" : "Character, Intellect, Presence",
+    "What are the competencies of a leader?" : "Achieves, Develops, Leads",
+    "What are the two types of infuences a leader can have?" : "Commitment, Compliance",
+    "What are the two independent sources of power?" : "Postion Power, Pesonnel Power",
+    "What are the six types of power?" : "Coercive, Expert, Information, Legitimate, Referent, Reward",
+    "What are the different types of leadership styles?" : "Affiliative, Authoritative, Coaching, Coercive, Democratic, Pacesetting",
+    "Which leadership styles promotes commitment-based following?" : "Affiliative, Authoritative, Coaching, Democratic",
+    "Which leadership styles promote compliance-based following?" : "Coercive, Pacesetting",
+    "What are the four consistent factors of that affect leadership?" : "The leader, The led, the situation, the communication",
+    "What are the three types of duties that an NCO must accomplish?" : "Specified duties, Directed duties, Implied duties",
+    "What are the three levels of leadership?" : "Direct, Organizational, Strategic",
+    "What are the three different types of counselings?" : "Event counseling, Performance counseling, Professional growth counseling",
+}
+
+chapter4{
+    "What is the name of the 4th chapter of the NCO guide?" : "Training",
+    "What ADP covers training?" : "ADP 7-0",
+    "What FM covers training" : "FM 7-0",
+    "What are the principles of training?" : "Train as you fight, Train to standard, Train to sustain, Train to maintain",
+    "What regulation covers training?" : "AR 350-1",
+    "What are the training domains?" : "Institutional, Operational, Self-Development",
+    "What are the three proficiencies units train?" : "Mission-essential tasks, Weapons, Collective live-fire",
+    "What are the training techniques NCO's can use?" : "Lane Training, Hip-pocket training, Sergeant's time training, Training models",
+}
+
+chapter5{
+    
 }
