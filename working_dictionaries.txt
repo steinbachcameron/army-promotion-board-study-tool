@@ -1,0 +1,15 @@
+chapter1{
+    "" : ""
+}
+
+chapter2{
+    "What is the name of Chapter 2 of the NCO Handbook?" : "Be, Know, Do",
+    "What are the attributes of a leader?" : "Character, Intellect, Presence",
+    "What are the competencies of a leader?" : "Achieves, Develops, Leads",
+    "What are the 6 NCO Core Competencies?" : "Readiness, Leadership, Training Management, Operations, Communication, Program Management",
+    "What are the 5 different types of responsibities covered in Chapter 2 of the NCO Handbook" : "Command, Custodial, Direct, Personal, Supervisory",
+}
+
+chapter3{
+    "What is the name for the 3rd chapter of the NCO guide" : "The Roadmap to Effective Leadership",
+}
