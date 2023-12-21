@@ -121,15 +121,27 @@ for num in chapters:
         finalTest.update(chapter6)
 
 #This is the code for the main test
-for x in range(0,choice):
-    qNum = str(qNum)
+count = 0
+for x in range(0, choice):
     random_question = random.choice(list(finalTest))
-    answer = input(f"Question {qNum}) " + random_question+"\n")
-    if answer.upper() == finalTest[random_question].upper():
-        input("You got the answer right!\n")
+    key = finalTest[random_question].upper()
+    if ',' in key:
+        key = key.split(',')
+    answer = input(f"Question {qNum}) " + random_question+"\n").upper()
+    if ',' in answer:
+        answer = answer.split(',')
+    if isinstance(key, list):
+        if set(answer) == set(key):
+            print("You got the answer correct!")
+        else:
+            print(f"The correct answer was:\n{key}")
     else:
-        print("Not quite what I am looking for...")
-        print("The correct answer was:", finalTest[random_question]+"\n")
+        if answer == key:
+                input("You got the answer right!\n")
+        else:
+                print("Not quite what I am looking for...")
+                print("The correct answer was:", finalTest[random_question]+"\n")
+        
     qNum = int(qNum)
     qNum += 1
 
