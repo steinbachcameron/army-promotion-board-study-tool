@@ -134,7 +134,7 @@ for x in range(0, choice):
         if set(answer) == set(key):
             print("You got the answer correct!")
         else:
-            print(f"The correct answer was:\n{key}")
+            print(f"The correct answer was:\n{key}\n")
 
     else:
         if answer == key:
