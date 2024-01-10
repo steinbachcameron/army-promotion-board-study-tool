@@ -126,15 +126,16 @@ for x in range(0, choice):
     random_question = random.choice(list(finalTest))
     key = finalTest[random_question].upper()
     if ',' in key:
-        key = key.split(',')
+        key = key.split(', ')
     answer = input(f"Question {qNum}) " + random_question+"\n").upper()
     if ',' in answer:
-        answer = answer.split(',')
+        answer = answer.split(', ')
     if isinstance(key, list):
         if set(answer) == set(key):
-            print("You got the answer correct!\n")
+            print("You got the answer correct!")
         else:
-            print(f"The correct answer was:\n{key}\n")
+            print(f"The correct answer was:\n{key}")
+
     else:
         if answer == key:
                 input("You got the answer right!\n")
