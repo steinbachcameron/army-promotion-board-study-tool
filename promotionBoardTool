@@ -132,7 +132,7 @@ for x in range(0, choice):
         answer = answer.split(', ')
     if isinstance(key, list):
         if set(answer) == set(key):
-            print("You got the answer correct!")
+            print("You got the answer correct!\n")
         else:
             print(f"The correct answer was:\n{key}\n")
 
