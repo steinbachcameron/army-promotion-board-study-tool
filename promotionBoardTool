@@ -14,7 +14,14 @@ print(banner(text))
 
 #This is a dictionary for the test, you can edit them as you see fit, answer_key dictionary can be used for questions that do not fall under any of the chapters of the NCO guide
 chapter1 = {
-    "" : ""
+    "What is the name for the 1st chapter if the NCO guide?" : "History of the NCO",
+    "Who was the first SMA?" : "SMA Wooldridge",
+    "Who is the current SMA?" : "SMA Weimer",
+    "Who wrote the blue book?" : "Baron Von Steuben",
+    "What two ranks always remained throughout army history?" : "Corporal, Sergeant",
+    "What is the full name of the blue book?" : "Regulation for the Order and Discipline of the Troops of the United States",
+    "When is the Army Birthday? (Full name of month DD YYYY)" : "June 14 1775",
+    "American NCO is a blend of what Armies?" : "Great Britain, France, Prussia",
 }
 
 chapter2 = {
@@ -76,6 +83,28 @@ chapter6 = {
     "What are NCO's certified in that makes them Army professionals?" : "Candor, Competence, Character, Commitment, Standards",
 }
 
+chapter7 = {
+    "What is the name of Chapter 7 of the NCO Guide?" : "Officer and NCO Relationships",
+    "What two characteristics enhance NCO and Officer relationships?" : "Mutual Trust, Common Goals",
+    "Where do NCOs derive their power from?" : "Secretary of the Army",
+    "Where do officers derive their power from?" : "President of the United States",
+    "What do NCOs provide to officers?" : "Support, Assistance, Advice",
+    "What regulation covers command authority?" : "AR 600-20",
+    "What is officer and NCO relationships based on?" : "Mutual Respect, communication, trust, commitment, devotion",
+    "Who's responsibility is to train lieutenants?" : "Company Commander",
+    "Who is the driving force behind the training of lieutenants?" : "Battalion Commander",
+    "What is the NCO counterpart for a company commander" : "1st Sergeant"
+}
+
+chapter8 = {
+    "What is the name of Chapter 8 of the NCO Guide?" : "Army Programs",
+    "What army programs fall under AR 600-20?" : "EO, SHARP",
+    "What program facilitate a commander's ability to provide comprehensive, coordinated, and responsive services that support readiness of Soldiers, Civilian employees, and their Families?" : "Army Community Service",
+    "What are the five key service areas Red Cross Provides?" : "disaster relief, supporting America\'s military families, lifesaving blood, health and safety services, international services",
+    "What army program provides programs and services to promote lifelong learning opportunities and to sharpen the competitive edge of the Army" : "Army Continuing Education System",
+    "What army program is defined as \"Helping the Army Take Care of Its Own\"" : "Army Emergency Relief",
+}
+
 #You can edit this dictionary by adding any questions that are not stated already on this
 #Format = "question" : "answer" (followed by a comma for each additional question you add)
 answer_key = {
@@ -84,10 +113,6 @@ answer_key = {
     "How many paragraphs are in the NCO Creed?" : "3",
     "What is the FM that covers H2F?" : "FM 7-22.01",
     "What is the FM for the NCO Handbook?" : "FM 7-22.7",
-    "When is the Army Birthday? (Full name of month DD YYYY)" : "June 14 1775",
-    "American NCO is a blend of what Armies?" : "Great Britain, France, Prussia",
-    "What is the full name of the blue book?" : "Regulation for the Order and Discipline of the Troops of the United States",
-    "Who was the first Sergeant of the Army?" : "SMA Wooldridge"
 }
 
 #You can add a situational question of your own by just putting your question into quotes and adding a , after the previous sitauation
@@ -119,32 +144,43 @@ for num in chapters:
         finalTest.update(chapter5)
     elif num == '6':
         finalTest.update(chapter6)
+    elif num == '7':
+        finalTest.update(chapter7)
+    elif num == '8':
+        finalTest.update(chapter8)
 
 #This is the code for the main test
 count = 0
-for x in range(0, choice):
-    random_question = random.choice(list(finalTest))
-    key = finalTest[random_question].upper()
-    if ',' in key:
-        key = key.split(', ')
-    answer = input(f"Question {qNum}) " + random_question+"\n").upper()
-    if ',' in answer:
-        answer = answer.split(', ')
-    if isinstance(key, list):
-        if set(answer) == set(key):
-            print("You got the answer correct!\n")
-        else:
-            print(f"The correct answer was:\n{key}\n")
+qnum = 1
+try:
+    for x in range(0, choice):
+        random_question = random.choice(list(finalTest))
+        key = finalTest[random_question].upper()
+        if ',' in key:
+            key = key.split(', ')
+        answer = input(f"Question {qNum}) " + random_question+"\n").upper()
+        if ',' in answer:
+            answer = answer.split(', ')
+        if isinstance(key, list):
+            if set(answer) == set(key):
+                print("You got the answer correct!\n")
+                del finalTest[random_question]
+            else:
+                print(f"The correct answer was:\n{key}\n")
+                del finalTest[random_question]
 
-    else:
-        if answer == key:
-                input("You got the answer right!\n")
         else:
-                print("Not quite what I am looking for...")
-                print("The correct answer was:", finalTest[random_question]+"\n")
+            if answer == key:
+                    input("You got the answer right!\n")
+                    del finalTest[random_question]
+            else:
+                    print("Not quite what I am looking for...")
+                    print("The correct answer was:", finalTest[random_question]+"\n")
+                    del finalTest[random_question]
+        qNum = qNum + 1
+except:
+    input("There are no more question left!\n")
         
-    qNum = int(qNum)
-    qNum += 1
 
 #This will ask the user a random situational question at the end of the written question portion
 sitQues = random.choice(Situational_Question)
