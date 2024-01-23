@@ -30,6 +30,8 @@ chapter2 = {
     "What are the competencies of a leader?" : "Achieves, Develops, Leads",
     "What are the 6 NCO Core Competencies?" : "Readiness, Leadership, Training Management, Operations, Communication, Program Management",
     "What are the 5 different types of responsibities covered in Chapter 2 of the NCO Handbook" : "Command, Custodial, Direct, Personal, Supervisory",
+    "What program does tbe Army have that helps to prevent fraud, waste and abuse" : "Command Supply and Discpipline Program",
+    "Doctrinally, what rank in the Army is charged with leading squad-sized elements" : "Staff Sergeant"
 }
 
 chapter3 = {
@@ -103,6 +105,24 @@ chapter8 = {
     "What are the five key service areas Red Cross Provides?" : "disaster relief, supporting America\'s military families, lifesaving blood, health and safety services, international services",
     "What army program provides programs and services to promote lifelong learning opportunities and to sharpen the competitive edge of the Army" : "Army Continuing Education System",
     "What army program is defined as \"Helping the Army Take Care of Its Own\"" : "Army Emergency Relief",
+    "What program \"creates an information loop between the global Army Family and leadership\"" : "Army Family Action Plan",
+    "What program provides all the functionality of a traditional FRG to meet the needs of geographically dispersed units and families" : "Army Family Readiness Group",
+    "Who's responsibility is it to ensure only the best-qualified soldiers are reenlisted" : "The Leader",
+    "What Army program covers retention?" : "Army Retention Program",
+    "What Army program covers prevention and risk management" : "Army Safety Program",
+    "Who's responsibility is it to stop unsafe acts?" : "Soldiers and Army Civilians",
+    "Under the Army Safety Program, what should individuals do to prevent unsafe acts?" : "Being responsible for accident prevention and applying risk management",
+    "What Army program exists to strengthen the overall fitness and effectiveness of the Army's workforce?" : "Army Substance Abuse Program",
+    "What Army program is an outpatient substance abuse treatment service available to all active duty personnel?" : "Substance Use Disorder Clinical Care",
+    "What Army program allows top-ranked Soldier-athletes to perform at the international level while also serving their nation in the military?" : "Army World Class Athlete Program",
+    "What Army program is a quality of life program that addresses single Soldier issues and initiatives?" : "Better Opportunities for Single Soldiers",
+    "What Army Program serves as the proponent for the Army profession, leadership and leader development programs?" : "Center for the Army Profession and Leadership",
+    "What Army program supports the Army Family by reducing the conflict between mission readiness and parental responsibility? [No Commas]" : "Child Youth and School Services",
+    "What four services are CYS Services consisted of?" : "Child Development Services, School Age Services, Youth Services, CYSS Liason Education and Outreach Services",
+    "What Army program is designed to build resilience and enhance performance of the Army Family-Soldiers, Families and Army Civilians?" : "Comprehensive Soldier and Family Fitness Program",
+    "What Army program is part of the CSF2 program, and offers strength-based, positive psychology tools?" : "Master Resiliency Training",
+    "What is a worldwide database of uniform service members, their family members and others who are eligible for military benefits?" : "Defense Enrollment Elibility Reporting System",
+    "What Army program ensures fair treatment for military personnel and family members?" : "Equal Opportunity Program",
 }
 
 #You can edit this dictionary by adding any questions that are not stated already on this
