@@ -14,7 +14,7 @@ print(banner(text))
 
 #This is a dictionary for the test, you can edit them as you see fit, answer_key dictionary can be used for questions that do not fall under any of the chapters of the NCO guide
 chapter1 = {
-    "What is the name for the 1st chapter if the NCO guide?" : "History of the NCO",
+    "What is the name for the 1st chapter of the NCO guide?" : "History of the NCO",
     "Who was the first SMA?" : "SMA Wooldridge",
     "Who is the current SMA?" : "SMA Weimer",
     "Who wrote the blue book?" : "Baron Von Steuben",
@@ -26,11 +26,9 @@ chapter1 = {
 
 chapter2 = {
     "What is the name of Chapter 2 of the NCO Handbook?" : "Be, Know, Do",
-    "What are the attributes of a leader?" : "Character, Intellect, Presence",
-    "What are the competencies of a leader?" : "Achieves, Develops, Leads",
     "What are the 6 NCO Core Competencies?" : "Readiness, Leadership, Training Management, Operations, Communication, Program Management",
     "What are the 5 different types of responsibities covered in Chapter 2 of the NCO Handbook" : "Command, Custodial, Direct, Personal, Supervisory",
-    "What program does the Army have that helps to prevent fraud, waste and abuse" : "Command Supply and Discpipline Program",
+    "What program does tbe Army have that helps to prevent fraud, waste and abuse" : "Command Supply and Discpipline Program",
     "Doctrinally, what rank in the Army is charged with leading squad-sized elements" : "Staff Sergeant"
 }
 
@@ -38,8 +36,12 @@ chapter3 = {
     "What is the name for the 3rd chapter of the NCO guide" : "The Roadmap to Effective Leadership",
     "What are the attributes of a leader?" : "Character, Intellect, Presence",
     "What are the competencies of a leader?" : "Achieves, Develops, Leads",
+    "What are the characteritics of a leader?" : "Leads, Develops, Achieves, Intellect, Presence, Character",
+    "What leader characteristic(s) fall under \"Be\"?" : "Presence, Character",
+    "What leader characterstic(s) fall under \"Know\"?" : "Intellect",
+    "What leader characteristic(s) fall under \"Do\"?" : "Leads, Develops, Achieves",
     "What are the two types of infuences a leader can have?" : "Commitment, Compliance",
-    "What are the two independent sources of power?" : "Postion Power, Pesonnel Power",
+    "What are the two independent sources of power?" : "Position Power, Pesonnel Power",
     "What are the six types of power?" : "Coercive, Expert, Information, Legitimate, Referent, Reward",
     "What are the different types of leadership styles?" : "Affiliative, Authoritative, Coaching, Coercive, Democratic, Pacesetting",
     "Which leadership styles promotes commitment-based following?" : "Affiliative, Authoritative, Coaching, Democratic",
@@ -47,7 +49,7 @@ chapter3 = {
     "What are the four consistent factors of that affect leadership?" : "The leader, The led, the situation, the communication",
     "What are the three types of duties that an NCO must accomplish?" : "Specified duties, Directed duties, Implied duties",
     "What are the three levels of leadership?" : "Direct, Organizational, Strategic",
-    "What are the three different types of counselings?" : "Event counseling, Performance counseling, Professional growth counseling",
+    "What are the three different types of counselings?" : "Event counseling, Performance counseling, Professional-Growth counseling",
 }
 
 chapter4 = {
@@ -135,6 +137,8 @@ answer_key = {
     "What is the FM for the NCO Handbook?" : "FM 7-22.7",
 }
 
+missed_questions = {}
+
 #You can add a situational question of your own by just putting your question into quotes and adding a , after the previous sitauation
 Situational_Question = [
     "Your soldier comes up to you not knowing if he wants to reenlist, how do you proceed?\n",
@@ -171,37 +175,84 @@ for num in chapters:
 
 #This is the code for the main test
 count = 0
+score = 0
 qnum = 1
+
 try:
     for x in range(0, choice):
+        count = count + 1
         random_question = random.choice(list(finalTest))
         key = finalTest[random_question].upper()
         if ',' in key:
-            key = key.split(', ')
+            split_key = key.split(', ')
         answer = input(f"Question {qNum}) " + random_question+"\n").upper()
         if ',' in answer:
-            answer = answer.split(', ')
+            split_answer = answer.split(', ')
         if isinstance(key, list):
-            if set(answer) == set(key):
+            if set(split_answer) == set(split_key):
                 print("You got the answer correct!\n")
                 del finalTest[random_question]
+                score = score + 1
             else:
                 print(f"The correct answer was:\n{key}\n")
+                missed_questions.update({random_question : key})
                 del finalTest[random_question]
 
         else:
             if answer == key:
                     input("You got the answer right!\n")
                     del finalTest[random_question]
+                    score = score + 1
             else:
                     print("Not quite what I am looking for...")
                     print("The correct answer was:", finalTest[random_question]+"\n")
+                    missed_questions.update({random_question : key})
                     del finalTest[random_question]
         qNum = qNum + 1
 except:
-    input("There are no more question left!\n")
-        
+    print("There are no more questions")
+
+
+print(f"You got {score}/{count} correct!")
 
 #This will ask the user a random situational question at the end of the written question portion
 sitQues = random.choice(Situational_Question)
+
 input(sitQues)
+
+mNum = 1
+print("\nHere are the questions you missed:")
+for question in missed_questions:
+    print(f"{mNum}: {question}")
+    mNum = mNum + 1
+
+qNum = 1
+retry = input("\nWould you like to try these questions again? (Y/N)\n")
+if retry.upper() == 'Y':
+     for question in range(1, mNum):
+        random_question = random.choice(list(missed_questions))
+        key = missed_questions[random_question].upper()
+        if ',' in key:
+            key = key.split(', ')
+        answer = input(f"\nQuestion {question}) " + random_question+"\n").upper()
+        if ',' in answer:
+            answer = answer.split(', ')
+        if isinstance(key, list):
+            if set(answer) == set(key):
+                print("You got the answer correct!\n")
+                del missed_questions[random_question]
+            else:
+                print(f"The correct answer was:\n{key}\n")
+                del missed_questions[random_question]
+
+        else:
+            if answer == key:
+                    input("You got the answer right!\n")
+                    del missed_questions[random_question]
+            else:
+                    print("Not quite what I am looking for...")
+                    print("The correct answer was:", missed_questions[random_question]+"\n")
+                    del missed_questions[random_question]
+        qNum = qNum + 1
+
+input()
