@@ -140,19 +140,19 @@ answer_key = {
 eo = {
     "What is any action that unlawfully or unjustly results in unequal treatment of persons or groups based on race, color, gender, national origin or religion referred to as?" : "Discrimination",
     "What is an EOA?" : "Equal Opportunity Advisor",
-    "What level is an EOA located at?" : "Bridage",
+    "What level is an EOA located at?" : "Brigade",
     "What is the Army’s EO/Sexual Harassment Assistance Line number?" : "1–800–267–9964",
     "What regulation governs the investigations of EO Complaints?" : "AR 15-6",
-    "What are the two types of EO Complaints?" : "Formal, Informal",
+    "What are the three types of EO Complaints?" : "Formal, Informal, Anonymous",
     "What is any complaint that a Soldier or Family member does not wish to file in writing referred to as?" : "Informal Complaint",
     "What kind of complaint is a complainant that is filed in writing and swears to the accuracy of the information and require specific actions, are subject to timelines, and require documentation of the actions taken" : "Formal Conplaint",
     "What is the form used to file a Formal Complaint?" : "DA Form 7279",
     "What is DA Form 7279 referred as?" : "Equal Opportunity Complaint Form",
     "How long do Soldiers have to file a Formal Complaint?" : "60 days from incident",
+    "What are the protected categories of SHARP?" : "Color, National Origin, Race, Religion, Sex, Sexual Orientation",
 }
 
 sharp = {
-    "What are the protected categories of SHARP?" : "Color, National Origin, Race, Religion, Sex, Sexual Orientation",
     "What does SHARP stand for?" : "Sexual Harassment Assault Response and Prevention",
     "What does \'I AM\' stand for?" : "Intervene Act Motivate",
     "What does POSH stand for?" : "Prevention of Sexual Harassment",
@@ -160,7 +160,7 @@ sharp = {
     "What are the types of sexual harassment?" : "Quid Pro Quo, Hostile work environment",
     "What are the five techniques for dealing with sexual harassment?" : "Direct approach, indirect approach, third party, chain of command, file a formal complaint",
     "What are the three echelons of sexual assault victim advocates (VAs) in a Garrison Environment?" : "installation sexual assault response coordinator, installation victim advocates, Unit victim advocates",
-    "What are the two types of reporting of Sexual Assault" : "Restricted, Unrestricted",
+    "What are the two types of reporting methods for Sexual Assault" : "Restricted, Unrestricted",
     "What form is used to submit a Sexual Harassment Complaint?" : "DA Form 7746",
 }
 
