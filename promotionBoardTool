@@ -137,6 +137,55 @@ answer_key = {
     "What is the FM for the NCO Handbook?" : "FM 7-22.7",
 }
 
+eo = {
+    "What is any action that unlawfully or unjustly results in unequal treatment of persons or groups based on race, color, gender, national origin or religion referred to as?" : "Discrimination",
+    "What is an EOA?" : "Equal Opportunity Advisor",
+    "What level is an EOA located at?" : "Bridage",
+    "What is the Army’s EO/Sexual Harassment Assistance Line number?" : "1–800–267–9964",
+    "What regulation governs the investigations of EO Complaints?" : "AR 15-6",
+    "What are the two types of EO Complaints?" : "Formal, Informal",
+    "What is any complaint that a Soldier or Family member does not wish to file in writing referred to as?" : "Informal Complaint",
+    "What kind of complaint is a complainant that is filed in writing and swears to the accuracy of the information and require specific actions, are subject to timelines, and require documentation of the actions taken" : "Formal Conplaint",
+    "What is the form used to file a Formal Complaint?" : "DA Form 7279",
+    "What is DA Form 7279 referred as?" : "Equal Opportunity Complaint Form",
+    "How long do Soldiers have to file a Formal Complaint?" : "60 days from incident",
+}
+
+sharp = {
+    "What are the protected categories of SHARP?" : "Color, National Origin, Race, Religion, Sex, Sexual Orientation",
+    "What does SHARP stand for?" : "Sexual Harassment Assault Response and Prevention",
+    "What does \'I AM\' stand for?" : "Intervene Act Motivate",
+    "What does POSH stand for?" : "Prevention of Sexual Harassment",
+    "What are the categories of sexual harassment?" : "Verbal, Non-Verbal, Physical Contact",
+    "What are the types of sexual harassment?" : "Quid Pro Quo, Hostile work environment",
+    "What are the five techniques for dealing with sexual harassment?" : "Direct approach, indirect approach, third party, chain of command, file a formal complaint",
+    "What are the three echelons of sexual assault victim advocates (VAs) in a Garrison Environment?" : "installation sexual assault response coordinator, installation victim advocates, Unit victim advocates",
+    "What are the two types of reporting of Sexual Assault" : "Restricted, Unrestricted",
+    "What form is used to submit a Sexual Harassment Complaint?" : "DA Form 7746",
+}
+
+h2f = {
+    "What is the FM that covers H2F?" : "FM 7-22.01",
+    "What does PRT stand for?" : "Physical Readiness Training",
+    "What FM covers Physical Readiness Training (PRT)?" : "FM 7-22",
+    "What does C-METL stand for?" : "Core Mission Essential Task List",
+    "What does D-METL stand for?" : "Direct Mission Essential Task List",
+    "What does WTBD stand for?" : "Warrior Tasks and Battle Drills",
+    "What is the principle that all Army training is based on?" : "Train as you will fight",
+    "What fundamental skills to PRT activities include?" : "climbing, crawling, jumping, landing, sprinting",
+    "What are the critical components of physical readiness?" : "Physical components, structural capabilities, movement skills",
+    "What are the structural capabilities of physical readiness?" : "load tolerance, flexibility, static balance, body composition, bone density",
+    "What are the physical components of physical readiness?" : "muscular strength and endurance, aerobic and anaerobic endurance, power",
+    "What are the movement skills of physical readiness?" : "agility, coordination, dynamic balance, kinesthesia, pace, perception, reaction time",
+    "What are the  training phases of H2F?" : "Initial, Sustaining",
+    "What is the PRT phase with the goal of restoring Soldiers’ physical fitness levels that enable them to safely progress to their previous level of physical conditioning referred to as?" : "Reconditioning",
+    "What principles does PRT follow?" : "Precision, Integration, Progression",
+    "What elements does a PRT session consist of?" : "Preparation, activities, recovery",
+    "What does H2F stand for?" : "Holistic Health and Fitness",
+    "What are the principles of H2F?" : "Optimization, Individualization, Immersion",
+    "What are the five H2F domains?" : "Physical readiness, mental readiness, nutritional readiness, sleep readiness, spiritual readiness",
+}
+
 missed_questions = {}
 
 #You can add a situational question of your own by just putting your question into quotes and adding a , after the previous sitauation
@@ -148,6 +197,9 @@ Situational_Question = [
 
 #chapters will allow the user to choose what chapters they want to review
 chapters = input("What Chapters of the NCO Guide would you like to cover today?\n")
+#This will allow users to add sharp/eo/and h2f questions to their study session
+additional_questions = input("Type H2F, EO, and/or SHARP if you would like to review them [add a space between each selection]:\n").upper()
+additional_questions = additional_questions.split(' ')
 #choice will allow the user to select the number of questions they want to review
 choice = int(input("How many questions would you like to do?\n"))
 qNum = 1
@@ -172,6 +224,15 @@ for num in chapters:
         finalTest.update(chapter7)
     elif num == '8':
         finalTest.update(chapter8)
+
+#This is the line of code that will add the additional questions to the study session
+for selection in additional_questions:
+    if selection == 'EO':
+        finalTest.update(eo)
+    elif selection == 'SHARP':
+        finalTest.update(sharp)
+    elif finalTest == "H2F":
+        finalTest.update(h2f)
 
 #This is the code for the main test
 count = 0
