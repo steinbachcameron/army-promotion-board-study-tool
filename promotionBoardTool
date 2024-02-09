@@ -241,38 +241,32 @@ qnum = 1
 
 try:
     for x in range(0, choice):
-        count = count + 1
         random_question = random.choice(list(finalTest))
         key = finalTest[random_question].upper()
         if ',' in key:
-            split_key = key.split(', ')
+            key = key.split(', ')
         answer = input(f"Question {qNum}) " + random_question+"\n").upper()
         if ',' in answer:
-            split_answer = answer.split(', ')
+            answer = answer.split(', ')
         if isinstance(key, list):
-            if set(split_answer) == set(split_key):
+            if set(answer) == set(key):
                 print("You got the answer correct!\n")
                 del finalTest[random_question]
-                score = score + 1
             else:
                 print(f"The correct answer was:\n{key}\n")
-                missed_questions.update({random_question : key})
                 del finalTest[random_question]
 
         else:
             if answer == key:
                     input("You got the answer right!\n")
                     del finalTest[random_question]
-                    score = score + 1
             else:
                     print("Not quite what I am looking for...")
                     print("The correct answer was:", finalTest[random_question]+"\n")
-                    missed_questions.update({random_question : key})
                     del finalTest[random_question]
         qNum = qNum + 1
 except:
-    print("There are no more questions")
-
+    input("There are no more question left!\n")
 
 print(f"You got {score}/{count} correct!")
 
