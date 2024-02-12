@@ -251,6 +251,7 @@ try:
                 if set(set_answer) == set(set_key):
                     print("You got the answer correct!\n")
                     del finalTest[random_question]
+    
                 else:
                     print(f"The correct answer was:\n{key}\n")
                     del finalTest[random_question]
@@ -261,16 +262,16 @@ try:
             if answer == key:
                     input("You got the answer right!\n")
                     del finalTest[random_question]
+                    score + 1
             else:
                     print("Not quite what I am looking for...")
                     print("The correct answer was:", finalTest[random_question]+"\n")
                     del finalTest[random_question]
                     missed_questions.update({random_question : key})
         qNum = qNum + 1
+
 except:
     input("There are no more question left!\n")
-
-print(f"You got {score}/{count} correct!")
 
 #This will ask the user a random situational question at the end of the written question portion
 sitQues = random.choice(Situational_Question)
