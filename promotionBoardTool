@@ -244,19 +244,20 @@ try:
         random_question = random.choice(list(finalTest))
         key = finalTest[random_question].upper()
         if ',' in key:
-            key = key.split(', ')
-        answer = input(f"Question {qNum}) " + random_question+"\n").upper()
-        if ',' in answer:
-            answer = answer.split(', ')
-        if isinstance(key, list):
-            if set(answer) == set(key):
-                print("You got the answer correct!\n")
-                del finalTest[random_question]
+            set_key = key.split(', ')
+            set_answer = input(f"Question {qNum}) " + random_question+"\n").upper()
+            if ',' in set_answer:
+                set_answer = set_answer.split(', ')
+                if set(set_answer) == set(set_key):
+                    print("You got the answer correct!\n")
+                    del finalTest[random_question]
             else:
                 print(f"The correct answer was:\n{key}\n")
                 del finalTest[random_question]
+                missed_questions.update({random_question : key})
 
         else:
+            answer = input(f"Question {qNum}) " + random_question+"\n").upper()
             if answer == key:
                     input("You got the answer right!\n")
                     del finalTest[random_question]
@@ -264,6 +265,7 @@ try:
                     print("Not quite what I am looking for...")
                     print("The correct answer was:", finalTest[random_question]+"\n")
                     del finalTest[random_question]
+                    missed_questions.update({random_question : key})
         qNum = qNum + 1
 except:
     input("There are no more question left!\n")
@@ -287,9 +289,9 @@ if retry.upper() == 'Y':
      for question in range(1, mNum):
         random_question = random.choice(list(missed_questions))
         key = missed_questions[random_question].upper()
+        answer = input(f"Question {qNum}) " + random_question+"\n").upper()
         if ',' in key:
             key = key.split(', ')
-        answer = input(f"\nQuestion {question}) " + random_question+"\n").upper()
         if ',' in answer:
             answer = answer.split(', ')
         if isinstance(key, list):
