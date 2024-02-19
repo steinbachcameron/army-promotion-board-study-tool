@@ -231,7 +231,7 @@ for selection in additional_questions:
         finalTest.update(eo)
     elif selection == 'SHARP':
         finalTest.update(sharp)
-    elif finalTest == "H2F":
+    elif selection == "H2F":
         finalTest.update(h2f)
 
 #This is the code for the main test
