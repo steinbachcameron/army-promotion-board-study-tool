@@ -13,177 +13,347 @@ print(banner(text))
 
 
 #This is a dictionary for the test, you can edit them as you see fit, answer_key dictionary can be used for questions that do not fall under any of the chapters of the NCO guide
-chapter1 = {
-    "What is the name for the 1st chapter of the NCO guide?" : "History of the NCO",
-    "Who was the first SMA?" : "SMA Wooldridge",
-    "Who is the current SMA?" : "SMA Weimer",
-    "Who wrote the blue book?" : "Baron Von Steuben",
-    "What two ranks always remained throughout army history?" : "Corporal, Sergeant",
-    "What is the full name of the blue book?" : "Regulation for the Order and Discipline of the Troops of the United States",
-    "When is the Army Birthday? (Full name of month DD YYYY)" : "June 14 1775",
-    "American NCO is a blend of what Armies?" : "Great Britain, France, Prussia",
-}
+chapter1 = { 
 
-chapter2 = {
-    "What is the name of Chapter 2 of the NCO Handbook?" : "Be, Know, Do",
-    "What are the 6 NCO Core Competencies?" : "Readiness, Leadership, Training Management, Operations, Communication, Program Management",
-    "What are the 5 different types of responsibities covered in Chapter 2 of the NCO Handbook" : "Command, Custodial, Direct, Personal, Supervisory",
-    "What program does tbe Army have that helps to prevent fraud, waste and abuse" : "Command Supply and Discpipline Program",
-    "Doctrinally, what rank in the Army is charged with leading squad-sized elements" : "Staff Sergeant"
-}
+    "What is the name for the 1st chapter of the NCO guide?" : "History of the NCO", 
 
-chapter3 = {
-    "What is the name for the 3rd chapter of the NCO guide" : "The Roadmap to Effective Leadership",
-    "What are the attributes of a leader?" : "Character, Intellect, Presence",
-    "What are the competencies of a leader?" : "Achieves, Develops, Leads",
-    "What are the characteritics of a leader?" : "Leads, Develops, Achieves, Intellect, Presence, Character",
-    "What leader characteristic(s) fall under \"Be\"?" : "Presence, Character",
-    "What leader characterstic(s) fall under \"Know\"?" : "Intellect",
-    "What leader characteristic(s) fall under \"Do\"?" : "Leads, Develops, Achieves",
-    "What are the two types of infuences a leader can have?" : "Commitment, Compliance",
-    "What are the two independent sources of power?" : "Position Power, Pesonnel Power",
-    "What are the six types of power?" : "Coercive, Expert, Information, Legitimate, Referent, Reward",
-    "What are the different types of leadership styles?" : "Affiliative, Authoritative, Coaching, Coercive, Democratic, Pacesetting",
-    "Which leadership styles promotes commitment-based following?" : "Affiliative, Authoritative, Coaching, Democratic",
-    "Which leadership styles promote compliance-based following?" : "Coercive, Pacesetting",
-    "What are the four consistent factors of that affect leadership?" : "The leader, The led, the situation, the communication",
-    "What are the three types of duties that an NCO must accomplish?" : "Specified duties, Directed duties, Implied duties",
-    "What are the three levels of leadership?" : "Direct, Organizational, Strategic",
-    "What are the three different types of counselings?" : "Event counseling, Performance counseling, Professional-Growth counseling",
-}
+    "Who was the first SMA?" : "SMA Wooldridge", 
 
-chapter4 = {
-    "What is the name of the 4th chapter of the NCO guide?" : "Training",
-    "What ADP covers training?" : "ADP 7-0",
-    "What FM covers training" : "FM 7-0",
-    "What are the principles of training?" : "Train as you fight, Train to standard, Train to sustain, Train to maintain",
-    "What regulation covers training?" : "AR 350-1",
-    "What are the training domains?" : "Institutional, Operational, Self-Development",
-    "What are the three proficiencies units train?" : "Mission-essential tasks, Weapons, Collective live-fire",
-    "What are the training techniques NCO's can use?" : "Lane Training, Hip-pocket training, Sergeant's time training, Training models",
-}
+    "Who is the current SMA?" : "SMA Weimer", 
 
-chapter5 = {
-    "What is the name of the fifth chaper of the NCO Guide" : "Mission Command",
-    "How does Chapter 5 define mission command" : "The Army's approach to command and control that empowers subordinate decision making and decentralized execution appropriate to the situation",
-    "What are the elements of mission command?" : "Authority, Decision making, Leadership, Responsibility",
-    "What are the elements of control?" : "Communication, Direction, Feedback, Information",
-    "What are the principles of mission command?" : "Competence, Mutual Trust, Shared Understanding, Commander's Intent, Mission Orders, Disciplined Initiative, Risk Acceptance",
-    "What are the Troop Leading Procedures" : "Receive the Mission, Issue a warning order, Make a tentative plan, Start necessary movements, Conduct reconnaissance, Complete the plan, Issue the Operations Order, Supervise and refine",
-    "What are the five paragraphs in all mission orders?" : "Situation, Mission, Execution, Sustainment, Command and Signal",
-    "What are the Army's six warfighting functions?" : "Movement and Maneuver, Intelligence, Fires, Sustainment, Protection, Command and Control",
-    "What tasks fall under the C2 Warfighing function" : "Command forces, Control operations, Drive the operations process, Establish the C2 system",
-    "What are the components of the C2 system" : "People, Processes, Networks, Command posts",
-}
+    "Who wrote the blue book?" : "Baron Von Steuben", 
 
-chapter6 = {
-    "What is the name of Chapter 6 of the NCO Guide?" : "The Army Profession",
-    "What are the characteristics of the Army Profession" : "Trust, Honorable Service, Military Expertise, Stewarship of the Profession, Esprit De Corps",
-    "What are the army values?" : "Loyalty, Duty, Respect, Selfless Service, Honor, Integrity, Personal Courage",
-    "How many streamers are on the Army flag" : "189",
-    "What are the colors of the Army flag" : "Red, White, Blue",
-    "What are the senses of pride derived from?" : "Self Pride, Civic Pride, National Pride, Espirit de Corps",
-    "What are the basic elements of an inspection?" : "Measure performance against a standard, Determine the magnitude of the problem, Seek the root cause of a problem, Determine a solution",
-    "What are NCO's certified in that makes them Army professionals?" : "Candor, Competence, Character, Commitment, Standards",
-}
+    "What two ranks always remained throughout army history?" : "Corporal, Sergeant", 
 
-chapter7 = {
-    "What is the name of Chapter 7 of the NCO Guide?" : "Officer and NCO Relationships",
-    "What two characteristics enhance NCO and Officer relationships?" : "Mutual Trust, Common Goals",
-    "Where do NCOs derive their power from?" : "Secretary of the Army",
-    "Where do officers derive their power from?" : "President of the United States",
-    "What do NCOs provide to officers?" : "Support, Assistance, Advice",
-    "What regulation covers command authority?" : "AR 600-20",
-    "What is officer and NCO relationships based on?" : "Mutual Respect, communication, trust, commitment, devotion",
-    "Who's responsibility is to train lieutenants?" : "Company Commander",
-    "Who is the driving force behind the training of lieutenants?" : "Battalion Commander",
-    "What is the NCO counterpart for a company commander" : "1st Sergeant"
-}
+    "What is the full name of the blue book?" : "Regulation for the Order and Discipline of the Troops of the United States", 
 
-chapter8 = {
-    "What is the name of Chapter 8 of the NCO Guide?" : "Army Programs",
-    "What army programs fall under AR 600-20?" : "EO, SHARP",
-    "What program facilitate a commander's ability to provide comprehensive, coordinated, and responsive services that support readiness of Soldiers, Civilian employees, and their Families?" : "Army Community Service",
-    "What are the five key service areas Red Cross Provides?" : "disaster relief, supporting America\'s military families, lifesaving blood, health and safety services, international services",
-    "What army program provides programs and services to promote lifelong learning opportunities and to sharpen the competitive edge of the Army" : "Army Continuing Education System",
-    "What army program is defined as \"Helping the Army Take Care of Its Own\"" : "Army Emergency Relief",
-    "What program \"creates an information loop between the global Army Family and leadership\"" : "Army Family Action Plan",
-    "What program provides all the functionality of a traditional FRG to meet the needs of geographically dispersed units and families" : "Army Family Readiness Group",
-    "Who's responsibility is it to ensure only the best-qualified soldiers are reenlisted" : "The Leader",
-    "What Army program covers retention?" : "Army Retention Program",
-    "What Army program covers prevention and risk management" : "Army Safety Program",
-    "Who's responsibility is it to stop unsafe acts?" : "Soldiers and Army Civilians",
-    "Under the Army Safety Program, what should individuals do to prevent unsafe acts?" : "Being responsible for accident prevention and applying risk management",
-    "What Army program exists to strengthen the overall fitness and effectiveness of the Army's workforce?" : "Army Substance Abuse Program",
-    "What Army program is an outpatient substance abuse treatment service available to all active duty personnel?" : "Substance Use Disorder Clinical Care",
-    "What Army program allows top-ranked Soldier-athletes to perform at the international level while also serving their nation in the military?" : "Army World Class Athlete Program",
-    "What Army program is a quality of life program that addresses single Soldier issues and initiatives?" : "Better Opportunities for Single Soldiers",
-    "What Army Program serves as the proponent for the Army profession, leadership and leader development programs?" : "Center for the Army Profession and Leadership",
-    "What Army program supports the Army Family by reducing the conflict between mission readiness and parental responsibility? [No Commas]" : "Child Youth and School Services",
-    "What four services are CYS Services consisted of?" : "Child Development Services, School Age Services, Youth Services, CYSS Liason Education and Outreach Services",
-    "What Army program is designed to build resilience and enhance performance of the Army Family-Soldiers, Families and Army Civilians?" : "Comprehensive Soldier and Family Fitness Program",
-    "What Army program is part of the CSF2 program, and offers strength-based, positive psychology tools?" : "Master Resiliency Training",
-    "What is a worldwide database of uniform service members, their family members and others who are eligible for military benefits?" : "Defense Enrollment Elibility Reporting System",
-    "What Army program ensures fair treatment for military personnel and family members?" : "Equal Opportunity Program",
-}
+    "When is the Army Birthday? (Full name of month DD YYYY)" : "June 14 1775", 
 
-#You can edit this dictionary by adding any questions that are not stated already on this
-#Format = "question" : "answer" (followed by a comma for each additional question you add)
-answer_key = {
-    "Where do NCO's derive their power from?" : "Secretary of the Army",
-    "What are the protected categories of SHARP? (Alphabetical, seperated by commas)" : "Color, National Origin, Race, Religion, Sex, Sexual Orientation",
-    "How many paragraphs are in the NCO Creed?" : "3",
-    "What is the FM that covers H2F?" : "FM 7-22.01",
-    "What is the FM for the NCO Handbook?" : "FM 7-22.7",
-}
+    "American NCO is a blend of what Armies?" : "Great Britain, France, Prussia", 
 
-eo = {
-    "What is any action that unlawfully or unjustly results in unequal treatment of persons or groups based on race, color, gender, national origin or religion referred to as?" : "Discrimination",
-    "What is an EOA?" : "Equal Opportunity Advisor",
-    "What level is an EOA located at?" : "Brigade",
-    "What is the Army’s EO/Sexual Harassment Assistance Line number?" : "1–800–267–9964",
-    "What regulation governs the investigations of EO Complaints?" : "AR 15-6",
-    "What are the three types of EO Complaints?" : "Formal, Informal, Anonymous",
-    "What is any complaint that a Soldier or Family member does not wish to file in writing referred to as?" : "Informal Complaint",
-    "What kind of complaint is a complainant that is filed in writing and swears to the accuracy of the information and require specific actions, are subject to timelines, and require documentation of the actions taken" : "Formal Conplaint",
-    "What is the form used to file a Formal Complaint?" : "DA Form 7279",
-    "What is DA Form 7279 referred as?" : "Equal Opportunity Complaint Form",
-    "How long do Soldiers have to file a Formal Complaint?" : "60 days from incident",
-    "What are the protected categories of SHARP?" : "Color, National Origin, Race, Religion, Sex, Sexual Orientation",
-}
+} 
 
-sharp = {
-    "What does SHARP stand for?" : "Sexual Harassment Assault Response and Prevention",
-    "What does \'I AM\' stand for?" : "Intervene Act Motivate",
-    "What does POSH stand for?" : "Prevention of Sexual Harassment",
-    "What are the categories of sexual harassment?" : "Verbal, Non-Verbal, Physical Contact",
-    "What are the types of sexual harassment?" : "Quid Pro Quo, Hostile work environment",
-    "What are the five techniques for dealing with sexual harassment?" : "Direct approach, indirect approach, third party, chain of command, file a formal complaint",
-    "What are the three echelons of sexual assault victim advocates (VAs) in a Garrison Environment?" : "installation sexual assault response coordinator, installation victim advocates, Unit victim advocates",
-    "What are the two types of reporting methods for Sexual Assault" : "Restricted, Unrestricted",
-    "What form is used to submit a Sexual Harassment Complaint?" : "DA Form 7746",
-}
+  
 
-h2f = {
-    "What is the FM that covers H2F?" : "FM 7-22.01",
-    "What does PRT stand for?" : "Physical Readiness Training",
-    "What FM covers Physical Readiness Training (PRT)?" : "FM 7-22",
-    "What does C-METL stand for?" : "Core Mission Essential Task List",
-    "What does D-METL stand for?" : "Direct Mission Essential Task List",
-    "What does WTBD stand for?" : "Warrior Tasks and Battle Drills",
-    "What is the principle that all Army training is based on?" : "Train as you will fight",
-    "What fundamental skills to PRT activities include?" : "climbing, crawling, jumping, landing, sprinting",
-    "What are the critical components of physical readiness?" : "Physical components, structural capabilities, movement skills",
-    "What are the structural capabilities of physical readiness?" : "load tolerance, flexibility, static balance, body composition, bone density",
-    "What are the physical components of physical readiness?" : "muscular strength and endurance, aerobic and anaerobic endurance, power",
-    "What are the movement skills of physical readiness?" : "agility, coordination, dynamic balance, kinesthesia, pace, perception, reaction time",
-    "What are the  training phases of H2F?" : "Initial, Sustaining",
-    "What is the PRT phase with the goal of restoring Soldiers’ physical fitness levels that enable them to safely progress to their previous level of physical conditioning referred to as?" : "Reconditioning",
-    "What principles does PRT follow?" : "Precision, Integration, Progression",
-    "What elements does a PRT session consist of?" : "Preparation, activities, recovery",
-    "What does H2F stand for?" : "Holistic Health and Fitness",
-    "What are the principles of H2F?" : "Optimization, Individualization, Immersion",
-    "What are the five H2F domains?" : "Physical readiness, mental readiness, nutritional readiness, sleep readiness, spiritual readiness",
+chapter2 = { 
+
+    "What is the name of Chapter 2 of the NCO Handbook?" : "Be, Know, Do", 
+
+    "What are the 6 NCO Core Competencies?" : "Readiness, Leadership, Training Management, Operations, Communication, Program Management", 
+
+    "What are the 5 different types of responsibilities covered in Chapter 2 of the NCO Handbook" : "Command, Custodial, Direct, Personal, Supervisory", 
+
+    "What program does the Army have that helps to prevent fraud, waste and abuse" : "Command Supply and Discipline Program", 
+
+    "Doctrinally, what rank in the Army is charged with leading squad-sized elements" : "Staff Sergeant" 
+
+} 
+
+  
+
+chapter3 = { 
+
+    "What is the name for the 3rd chapter of the NCO guide" : "The Roadmap to Effective Leadership", 
+
+    "What are the attributes of a leader?" : "Character, Intellect, Presence", 
+
+    "What are the competencies of a leader?" : "Achieves, Develops, Leads", 
+
+    "What are the characteristics of a leader?" : "Leads, Develops, Achieves, Intellect, Presence, Character", 
+
+    "What leader characteristic(s) fall under \"Be\"?" : "Presence, Character", 
+
+    "What leader characteristic(s) fall under \"Know\"?" : "Intellect", 
+
+    "What leader characteristic(s) fall under \"Do\"?" : "Leads, Develops, Achieves", 
+
+    "What are the two types of influences a leader can have?" : "Commitment, Compliance", 
+
+    "What are the two independent sources of power?" : "Position Power, Personnel Power", 
+
+    "What are the six types of power?" : "Coercive, Expert, Information, Legitimate, Referent, Reward", 
+
+    "What are the different types of leadership styles?" : "Affiliative, Authoritative, Coaching, Coercive, Democratic, Pacesetting", 
+
+    "Which leadership styles promotes commitment-based following?" : "Affiliative, Authoritative, Coaching, Democratic", 
+
+    "Which leadership styles promote compliance-based following?" : "Coercive, Pacesetting", 
+
+    "What are the four consistent factors of that affect leadership?" : "The leader, The led, the situation, the communication", 
+
+    "What are the three types of duties that an NCO must accomplish?" : "Specified duties, Directed duties, Implied duties", 
+
+    "What are the three levels of leadership?" : "Direct, Organizational, Strategic", 
+
+    "What are the three different types of counselings?" : "Event counseling, Performance counseling, Professional-Growth counseling", 
+
+} 
+
+  
+
+chapter4 = { 
+
+    "What is the name of the 4th chapter of the NCO guide?" : "Training", 
+
+    "What ADP covers training?" : "ADP 7-0", 
+
+    "What FM covers training" : "FM 7-0", 
+
+    "What are the principles of training?" : "Train as you fight, Train to standard, Train to sustain, Train to maintain", 
+
+    "What regulation covers training?" : "AR 350-1", 
+
+    "What are the training domains?" : "Institutional, Operational, Self-Development", 
+
+    "What are the three proficiencies units train?" : "Mission-essential tasks, Weapons, Collective live-fire", 
+
+    "What are the training techniques NCO's can use?" : "Lane Training, Hip-pocket training, Sergeant's time training, Training models", 
+
+} 
+
+  
+
+chapter5 = { 
+
+    "What is the name of the fifth chapter of the NCO Guide" : "Mission Command", 
+
+    "How does Chapter 5 define mission command" : "The Army's approach to command and control that empowers subordinate decision making and decentralized execution appropriate to the situation", 
+
+    "What are the elements of mission command?" : "Authority, Decision making, Leadership, Responsibility", 
+
+    "What are the elements of control?" : "Communication, Direction, Feedback, Information", 
+
+    "What are the principles of mission command?" : "Competence, Mutual Trust, Shared Understanding, Commander's Intent, Mission Orders, Disciplined Initiative, Risk Acceptance", 
+
+    "What are the Troop Leading Procedures" : "Receive the Mission, Issue a warning order, Make a tentative plan, Start necessary movements, Conduct reconnaissance, Complete the plan, Issue the Operations Order, Supervise and refine", 
+
+    "What are the five paragraphs in all mission orders?" : "Situation, Mission, Execution, Sustainment, Command and Signal", 
+
+    "What are the Army's six warfighting functions?" : "Movement and Maneuver, Intelligence, Fires, Sustainment, Protection, Command and Control", 
+
+    "What tasks fall under the C2 Warfighing function" : "Command forces, Control operations, Drive the operations process, Establish the C2 system", 
+
+    "What are the components of the C2 system" : "People, Processes, Networks, Command posts", 
+
+} 
+
+  
+
+chapter6 = { 
+
+    "What is the name of Chapter 6 of the NCO Guide?" : "The Army Profession", 
+
+    "What are the characteristics of the Army Profession" : "Trust, Honorable Service, Military Expertise, Stewardship of the Profession, Esprit De Corps", 
+
+    "What are the army values?" : "Loyalty, Duty, Respect, Selfless Service, Honor, Integrity, Personal Courage", 
+
+    "How many streamers are on the Army flag" : "189", 
+
+    "What are the colors of the Army flag" : "Red, White, Blue", 
+
+    "What are the senses of pride derived from?" : "Self Pride, Civic Pride, National Pride, Espirit de Corps", 
+
+    "What are the basic elements of an inspection?" : "Measure performance against a standard, Determine the magnitude of the problem, Seek the root cause of a problem, Determine a solution", 
+
+    "What are NCO's certified in that makes them Army professionals?" : "Candor, Competence, Character, Commitment, Standards", 
+
+} 
+
+  
+
+chapter7 = { 
+
+    "What is the name of Chapter 7 of the NCO Guide?" : "Officer and NCO Relationships", 
+
+    "What two characteristics enhance NCO and Officer relationships?" : "Mutual Trust, Common Goals", 
+
+    "Where do NCOs derive their power from?" : "Secretary of the Army", 
+
+    "Where do officers derive their power from?" : "President of the United States", 
+
+    "What do NCOs provide to officers?" : "Support, Assistance, Advice", 
+
+    "What regulation covers command authority?" : "AR 600-20", 
+
+    "What is officer and NCO relationships based on?" : "Mutual Respect, communication, trust, commitment, devotion", 
+
+    "Whose responsibility is to train lieutenants?" : "Company Commander", 
+
+    "Who is the driving force behind the training of lieutenants?" : "Battalion Commander", 
+
+    "What is the NCO counterpart for a company commander" : "1st Sergeant" 
+
+} 
+
+  
+
+chapter8 = { 
+
+    "What is the name of Chapter 8 of the NCO Guide?" : "Army Programs", 
+
+    "What army programs fall under AR 600-20?" : "EO, SHARP", 
+
+    "What program facilitate a commander's ability to provide comprehensive, coordinated, and responsive services that support readiness of Soldiers, Civilian employees, and their Families?" : "Army Community Service", 
+
+    "What are the five key service areas Red Cross Provides?" : "disaster relief, supporting America\'s military families, lifesaving blood, health and safety services, international services", 
+
+    "What army program provides programs and services to promote lifelong learning opportunities and to sharpen the competitive edge of the Army" : "Army Continuing Education System", 
+
+    "What army program is defined as \"Helping the Army Take Care of Its Own\"" : "Army Emergency Relief", 
+
+    "What program \"creates an information loop between the global Army Family and leadership\"" : "Army Family Action Plan", 
+
+    "What program provides all the functionality of a traditional FRG to meet the needs of geographically dispersed units and families" : "Army Family Readiness Group", 
+
+    "Whose responsibility is it to ensure only the best-qualified soldiers are reenlisted" : "The Leader", 
+
+    "What Army program covers retention?" : "Army Retention Program", 
+
+    "What Army program covers prevention and risk management" : "Army Safety Program", 
+
+    "Whose responsibility is it to stop unsafe acts?" : "Soldiers and Army Civilians", 
+
+    "Under the Army Safety Program, what should individuals do to prevent unsafe acts?" : "Being responsible for accident prevention and applying risk management", 
+
+    "What Army program exists to strengthen the overall fitness and effectiveness of the Army's workforce?" : "Army Substance Abuse Program", 
+
+    "What Army program is an outpatient substance abuse treatment service available to all active-duty personnel?" : "Substance Use Disorder Clinical Care", 
+
+    "What Army program allows top-ranked Soldier-athletes to perform at the international level while also serving their nation in the military?" : "Army World Class Athlete Program", 
+
+    "What Army program is a quality-of-life program that addresses single Soldier issues and initiatives?" : "Better Opportunities for Single Soldiers", 
+
+    "What Army Program serves as the proponent for the Army profession, leadership and leader development programs?" : "Center for the Army Profession and Leadership", 
+
+    "What Army program supports the Army Family by reducing the conflict between mission readiness and parental responsibility? [No Commas]" : "Child Youth and School Services", 
+
+    "What four services are CYS Services consisted of?" : "Child Development Services, School Age Services, Youth Services, CYSS Liaison Education and Outreach Services", 
+
+    "What Army program is designed to build resilience and enhance performance of the Army Family-Soldiers, Families and Army Civilians?" : "Comprehensive Soldier and Family Fitness Program", 
+
+    "What Army program is part of the CSF2 program, and offers strength-based, positive psychology tools?" : "Master Resiliency Training", 
+
+    "What is a worldwide database of uniform service members, their family members and others who are eligible for military benefits?" : "Defense Enrollment Eligibility Reporting System", 
+
+    "What Army program ensures fair treatment for military personnel and family members?" : "Equal Opportunity Program", 
+
+} 
+
+  
+
+#You can edit this dictionary by adding any questions that are not stated already on this 
+
+#Format = "question" : "answer" (followed by a comma for each additional question you add) 
+
+answer_key = { 
+
+    "Where do NCO's derive their power from?" : "Secretary of the Army", 
+
+    "What are the protected categories of SHARP? (Alphabetical, seperated by commas)" : "Color, National Origin, Race, Religion, Sex, Sexual Orientation", 
+
+    "How many paragraphs are in the NCO Creed?" : "3", 
+
+    "What is the FM that covers H2F?" : "FM 7-22.01", 
+
+    "What is the FM for the NCO Handbook?" : "FM 7-22.7", 
+
+} 
+
+  
+
+eo = { 
+
+    "What is any action that unlawfully or unjustly results in unequal treatment of persons or groups based on race, color, gender, national origin or religion referred to as?" : "Discrimination", 
+
+    "What is an EOA?" : "Equal Opportunity Advisor", 
+
+    "What level is an EOA located at?" : "Brigade", 
+
+    "What is the Army’s EO/Sexual Harassment Assistance Line number?" : "1–800–267–9964", 
+
+    "What regulation governs the investigations of EO Complaints?" : "AR 15-6", 
+
+    "What are the three types of EO Complaints?" : "Formal, Informal, Anonymous", 
+
+    "What is any complaint that a Soldier or Family member does not wish to file in writing referred to as?" : "Informal Complaint", 
+
+    "What kind of complaint is a complainant that is filed in writing and swears to the accuracy of the information and require specific actions, are subject to timelines, and require documentation of the actions taken" : "Formal Complaint", 
+
+    "What is the form used to file a Formal Complaint?" : "DA Form 7279", 
+
+    "What is DA Form 7279 referred as?" : "Equal Opportunity Complaint Form", 
+
+    "How long do Soldiers have to file a Formal Complaint?" : "60 days from incident", 
+
+    "What are the protected categories under the EO program?" : "Color, National Origin, Race, Religion, Sex, Sexual Orientation", 
+
+} 
+
+  
+
+sharp = { 
+
+    "What does SHARP stand for?" : "Sexual Harassment Assault Response and Prevention", 
+
+    "What does \'I AM\' stand for?" : "Intervene Act Motivate", 
+
+    "What does POSH stand for?" : "Prevention of Sexual Harassment", 
+
+    "What are the categories of sexual harassment?" : "Verbal, Non-Verbal, Physical Contact", 
+
+    "What are the types of sexual harassment?" : "Quid Pro Quo, Hostile work environment", 
+
+    "What are the five techniques for dealing with sexual harassment?" : "Direct approach, indirect approach, third party, chain of command, file a formal complaint", 
+
+    "What are the three echelons of sexual assault victim advocates (VAs) in a Garrison Environment?" : "installation sexual assault response coordinator, installation victim advocates, Unit victim advocates", 
+
+    "What are the two types of reporting methods for Sexual Assault" : "Restricted, Unrestricted", 
+
+    "What form is used to submit a Sexual Harassment Complaint?" : "DA Form 7746", 
+
+} 
+
+  
+
+h2f = { 
+
+    "What is the FM that covers H2F?" : "FM 7-22.01", 
+
+    "What does PRT stand for?" : "Physical Readiness Training", 
+
+    "What FM covers Physical Readiness Training (PRT)?" : "FM 7-22", 
+
+    "What does C-METL stand for?" : "Core Mission Essential Task List", 
+
+    "What does D-METL stand for?" : "Direct Mission Essential Task List", 
+
+    "What does WTBD stand for?" : "Warrior Tasks and Battle Drills", 
+
+    "What is the principle that all Army training is based on?" : "Train as you will fight", 
+
+    "What fundamental skills to PRT activities include?" : "climbing, crawling, jumping, landing, sprinting", 
+
+    "What are the critical components of physical readiness?" : "Physical components, structural capabilities, movement skills", 
+
+    "What are the structural capabilities of physical readiness?" : "load tolerance, flexibility, static balance, body composition, bone density", 
+
+    "What are the physical components of physical readiness?" : "muscular strength and endurance, aerobic and anaerobic endurance, power", 
+
+    "What are the movement skills of physical readiness?" : "agility, coordination, dynamic balance, kinesthesia, pace, perception, reaction time", 
+
+    "What are the training phases of H2F?" : "Initial, Sustaining", 
+
+    "What is the PRT phase with the goal of restoring Soldiers’ physical fitness levels that enable them to safely progress to their previous level of physical conditioning referred to as?" : "Reconditioning", 
+
+    "What principles does PRT follow?" : "Precision, Integration, Progression", 
+
+    "What elements does a PRT session consist of?" : "Preparation, activities, recovery", 
+
+    "What does H2F stand for?" : "Holistic Health and Fitness", 
+
+    "What are the principles of H2F?" : "Optimization, Individualization, Immersion", 
+
+    "What are the five H2F domains?" : "Physical readiness, mental readiness, nutritional readiness, sleep readiness, spiritual readiness", 
 }
 
 missed_questions = {}
