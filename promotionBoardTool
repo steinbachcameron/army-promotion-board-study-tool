@@ -422,6 +422,10 @@ try:
                     print("You got the answer correct!\n")
                     del finalTest[random_question]
     
+                else:
+                    print(f"The correct answer was:\n{key}\n")
+                    del finalTest[random_question]
+                    missed_questions.update({random_question : key})
             else:
                 print(f"The correct answer was:\n{key}\n")
                 del finalTest[random_question]
